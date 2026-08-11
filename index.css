@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    
+}
+ .nav{
+    background-color: black;
+    color:white;
+    margin-top: -7px;
+    height: 70px;
+    z-index: 999;  
+}
+.nav a{
+    color:#FFFFFF; 
+}
+.navbar-brand{
+    padding-left: 80px;
+}
+.nav-item{
+    padding-left:20px;
+}
+.navbar-nav{
+    margin-left: 200px;
+}
+.navbar-text button{
+    border: 2px solid white;
+    margin-right: 120px;
+    border-radius: 20px;
+    width: 80px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+#box{
+    position: relative;
+    top:-10px;
+    width: 100%;
+    height:600px;
+    padding-top: 150px;
+    display: flex;
+}
+.box-left{
+    width: 50%;
+    padding-left: 50px;
+}
+.box-left p{
+    text-align: justify;
+    line-height: 32px;
+}
+.box-right{
+    width: 50%;
+    position: relative;
+}
+.box-right .back{
+    margin-left: 480px;
+    transform: rotate(45deg);
+    width: 300px;
+    position: absolute;
+    top:20px;
+    
+}
+.box-left button{
+    border: 2px solid white;
+    background-color: skyblue;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
+.box-right .ph{
+    width: 300px;
+    position: absolute;
+    left:200px;
+}
+.two h2{
+    text-align: center;
+    text-decoration:underline;
+}
+#about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 7%;
+}
+.about-title {
+    text-align: center;
+}
+.about-title h1 {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.title-line {
+    width: 120px;
+    border-bottom: 1px dashed white;
+    margin: auto;
+}
+.about-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.image-area {
+    width: 48%;
+    height: 570px;
+    position: relative;
+}
+.img {
+    position: absolute;
+    height: auto;
+    object-fit: contain;
+}
+.img1 {
+    width: 150px;
+    top: 0px;
+    left: -20;
+    z-index: 1;
+}
+.img2 {
+    width: 330px;
+    top: 125px;
+    left: 50px;
+}
+.img3 {
+    width: 145px;
+    top:500px;
+    left: 315px;
+}
+.text-area {
+    width: 52%;
+    padding-left: 45px;
+}
+.name {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+.name span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: nameFromRight 0.6s ease forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes nameFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.quote {
+    font-size: 75px;
+    line-height: 35px;
+}
+.description {
+    max-width: 650px;
+    color: #aaa;
+    font-size: 21px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.quote-end {
+    font-size: 75px;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -50px;
+}
+
+.skill{
+    margin-top: 60px;
+}
+/* CARD CONTAINER */
+
+.skills-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 55px;
+    row-gap: 25px;
+}
+.skill-card {
+    width: 50%;
+    height: 250px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8px 12px;
+    margin:0px 150px;
+}
+.number {
+    position: absolute;
+    left: -23px;
+    bottom: 45px;
+    font-size: 55px;
+    font-weight: 300;
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+.skill-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-top: 15px;
+}
+.skill-card button {
+    width: 80px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: #55547d;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+.skill-card::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #444;
+    border-bottom-left-radius: 18px;
+}
+#projects {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 5%;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.project-title h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.title-line {
+    width: 60px;
+    border-bottom: 1px dashed white;
+    margin: 5px auto;
+}
+.project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.project-image {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.project-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(30, 120, 180, 0.35);
+}
+.project-image h3 {
+    position: absolute;
+    font-size: 14px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.project-content {
+    width: 60%;
+    padding-left: 10px;
+}
+.project-content h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.project-content p {
+    max-width: 600px;
+    color: #aaa;
+    font-size: 10px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+.project-btn {
+    display: inline-block;
+    background-color: #eeeeee;
+    color: black;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.project-btn:hover {
+    background-color: #cccccc;
+}
+.education {
+    text-align: center;
+    padding-top: 10px;
+}
+.education h1,
+.contact h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.line {
+    width: 65px;
+    border-bottom: 1px dashed #aaa;
+    margin: 5px auto 35px;
+}
+#education {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.education h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.education .line {
+    width: 65px;
+    border-bottom: 1px dashed #aaa;
+    margin: 5px auto 35px;
+}
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.education-item {
+    width: 90px;
+}
+.education-item p {
+    margin-top: 18px;
+    font-size: 13px;
+}
+.circle {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    -webkit-mask:
+        radial-gradient(
+            farthest-side,
+            transparent calc(100% - 10px),
+            #000 calc(100% - 9px)
+        );
+}
+.circle span {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    z-index: 5;
+}
+.circle-81 {
+    background:
+        conic-gradient(
+            white 0deg 291.6deg,
+            transparent 291.6deg 360deg
+       );
+}
+.circle-80 {
+    background:
+        conic-gradient(
+            white 0deg 288deg,
+            transparent 288deg 360deg
+        );
+}
+.circle-85 {
+
+    background:
+        conic-gradient(
+            white 0deg 306deg,
+            transparent 306deg 360deg
+        );
+}
+.contact {
+    text-align: center;
+    margin-top: 45px;
+}
+.contact .line {
+    margin-bottom: 25px;
+}
+.contact-container {
+    width: 360px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    justify-content: center;
+    gap: 25px 35px;
+}
+.contact-item {
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contact-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
+}
+.contact-item:hover {
+    transform: translateY(-8px);
+}
+
+@media (min-width: 1200px) {
+    #box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-left {
+        width: 100%;
+    }
+    .box-right {
+        width: 100%;
+    }
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .box-left {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .box-right {
+        width: 100%;
+    }
+    .box-right .back {
+        width: 250px;
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    .box-right .ph {
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    .skill-card {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .box-left {
+        width: 100%;
+        padding-left: 15px;
+    }
+    .box-right {
+        width: 100%;
+    }
+    .box-right .back {
+        width: 220px;
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    .box-right .ph {
+        width: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     .about-container{
+        flex-direction: column;
+    }
+    .name{
+        width: 500px;
+        margin-left: -50px;
+    }
+    .text-area{
+        margin-top: 120px;
+    }
+    .image-area{
+        width: 400px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin-left: 180px;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    #box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        height: auto;
+    }
+    .box-left {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .box-left p {
+        text-align: center;
+    }
+    .box-right {
+        width: 100%;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .box-right .back {
+        width: 210px;
+        margin-left: 0;
+
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    .box-right .ph {
+        width: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     .about-container{
+        flex-direction: column;
+    }
+    .name{
+        width: 500px;
+        margin-left: -50px;
+    }
+    .text-area{
+        margin-top: 120px;
+    }
+    .image-area{
+        width: 400px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .skill-card {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width: 575px) {
+    #box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .box-left {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .box-left p {
+        text-align: center;
+    }
+    .box-right {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .box-right .back {
+        width: 170px;
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    .box-right .ph {
+        width: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .name{
+        width: 500px;
+        margin-left: -50px;
+    }
+    .text-area{
+        margin-top: 120px;
+    }
+    .image-area{
+        width: 400px;
+    }
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .skill-card {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
